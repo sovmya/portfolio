@@ -22,7 +22,7 @@ header {
 nav {
     /* padding: 30px; */
     display: flex;
-    border: greenyellow solid 2px;
+    border: rgb(47, 252, 255) solid 2px;
     /* justify-content: center; */
     justify-content: space-between;
     align-items: center;
