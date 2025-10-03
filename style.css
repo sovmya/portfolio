@@ -8,8 +8,8 @@ body {
     font-family: 'Poppins', sans-serif;
     /* font-size: 16px; */
     line-height: 1.6;
-    color: rgb(238, 238, 255);
-    background-color:rgb(17, 17, 32);
+    color: #eaeaea;
+    background-color: #0d0d1a;
 }
 
 header {
@@ -27,6 +27,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
+    background: #111122;
 }
 
 .nav-links {
@@ -36,16 +37,30 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: rgb(168, 168, 244);
+    color: #c3b6ff;
     /* font-weight: 500; */
     margin: 0.5rem 0.5rem;
     /* margin-left: 2rem; */
-    transition: rgb(35, 35, 122) 0.3s;
+    transition: color 0.3s ease;
+    position: relative;
 }
 
+/* nav a::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -4px;
+  width: 0; height: 2px;
+  background: #d4af37;
+  transition: width 0.3s ease;
+} */
+
 nav a:hover {
-    color: rgb(86, 86, 253);
+    color: #d4af37;
 }
+
+/* nav a:hover::after {
+  width: 100px;
+} */
 
 .hamburger {
     display: none;
@@ -108,8 +123,16 @@ main {
     justify-content: center;
     align-items: center;
     padding: 2rem 5%;
-    background-color: rgb(53, 53, 97);
+    background: linear-gradient(120deg, #0d0d1a, #1a0f2e, #111122);
+    background-size: 300% 300%;
+    animation: aurora 12s ease infinite;
     position: relative;
+}
+
+@keyframes aurora {
+  0% { background-position: 0% 50%;}
+  50% { background-position: 100% 50%;}
+  100% { background-position: 0% 50%;}
 }
 
 .hero-container {
@@ -135,25 +158,30 @@ main {
 .hero-text h2 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
+    color: #dcd6ff;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5), 0 0 20px rbga(106, 13, 173, 0.6);
 }
 
 .hero-text p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
-    color: #555;
+    color: #aaa;
 }
 
 .hero-text button {
     padding: 0.7rem 1.5rem;
-    background-color: #8e3636;
-    color: #1c9f71;
+    background-color: #6a0dad;
+    color: #fff;
     font-weight: bold;
+    border-radius: 6px;
     cursor: pointer;
-    transition: pink 0.3s;
+    transition: background 0.3s;
+    box-shadow: 0 0 12px rgba(106, 13, 173, 0.5);
 }
 
 .hero-text button:hover {
-    background-color: #8e3636;
+    background-color: #8b1e3f;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
 }
 
 #about {
@@ -173,11 +201,12 @@ main {
 .about-text h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #dcd6ff;
 }
 
 .about-text p {
   font-size: 1.1rem;
-  color: #813838;
+  color: #cbbfd9;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -189,11 +218,11 @@ main {
 }
 
 .hobbies span {
-  background: #2c9442;
+  background: #6a0dad;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
-  color: #da7070;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -298,10 +327,10 @@ main {
 }
 
 .prj {
-  background: #fff;
+  background: #1a1a2e;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 4px 10px rgba(139, 77, 77, 0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -311,6 +340,7 @@ main {
 
 .prj:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
 }
 
 .prj-img {
@@ -340,7 +370,7 @@ main {
 
 .prj a {
   margin-top: auto;
-  color: #0077cc;
+  color: #d4af37;
   font-weight: bold;
   text-decoration: none;
 }
@@ -349,15 +379,21 @@ main {
   text-decoration: underline;
 }
 
+.prj:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
 #collab {
   display: flex;
   align-items: center;
   gap: 2rem;
   padding: 4rem 2rem;
   flex-wrap: wrap;
-  background: #320a0a;
+  background: #1b0f1f;
   border-radius: 12px;
   margin: 2rem 0;
+  border: 1px solid #2e1340;
 }
 
 .collab-text {
@@ -371,14 +407,15 @@ main {
   align-self: start;
   padding: 0.6rem 1.2rem;
   border: none;
-  background: #0077cc;
-  color: #521a1a;
+  background: #6a0dad;
+  color: #fff;
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
 }
 .collab-text button:hover {
-  background: #172631;
+  background: #d4af37;
+  color: #111;
 }
 
 .collab-visual {
@@ -400,7 +437,7 @@ main {
   gap: 2rem;
   padding: 4rem 2rem;
   flex-wrap: wrap;
-  background: #530b0b;
+  background: #1a0f2e;
   border-radius: 12px;
   margin: 2rem 0;
 }
@@ -430,21 +467,27 @@ form {
 label {
   font-size: 0.9rem;
   margin-bottom: 0.3rem;
-  color: #333;
+  color: #cbbfd9;
 }
 
 input, textarea {
   padding: 0.8rem;
-  border: 1px solid #ccc;
+  border: 1px solid #111122;
   border-radius: 6px;
   font: inherit;
+  color: #fff;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #6a0dad;
 }
 
 button {
   align-self: start;
   padding: 0.8rem 1.5rem;
   border: none;
-  background: #0077cc;
+  background: #6a0dad;
   color: #fff;
   border-radius: 6px;
   cursor: pointer;
@@ -452,21 +495,16 @@ button {
 }
 
 button:hover {
-  background: #005fa3;
-}
-
-
-footer {
-    
-    justify-content: space-between;
+  background: #d4af37;
+  color: #111;
 }
 
 footer {
     /* grid-column: 1/5; */
     /* grid-row: 5/6; */
     border: white solid 2px;
-  background: #111;
-  color: #fff;
+  background: #0d0d1a;
+    color: #aaa;
   padding: 1.5rem 5%;
   display: flex;
   flex-direction: column;
@@ -476,7 +514,7 @@ footer {
 }
 
 footer .connect a {
-  color: #fff;
+  color: #c3b6ff;
   margin: 0 0.5rem;
   font-size: 1.5rem;
   text-decoration: none;
@@ -484,11 +522,31 @@ footer .connect a {
 }
 
 footer .connect a:hover {
-  color: #ffcc00;
+  color: #d4af37;
 }
 
 footer .copywrite p {
   font-size: 0.9rem;
   color: #aaa;
   margin: 0;
+}
+
+a, button, .prj {
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 10px rgba(106, 13, 173, 0.6);
+  border-color: #d4af37;
+}
+
+button {
+  background: linear-gradient(90deg, #6a0dad, #8b1e3f, #6a0dad);
+  background-size: 200% 200%;
+  animation: shimmer 5s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
 }
