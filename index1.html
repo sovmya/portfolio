@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header> <!-- sticky thingy this to top-->
+    <header>
         <nav>
             <div class="logo">
                 <img src="image.png" alt="logo">
             </div>
             <div class="nav-links">
                 <a href="#hero">home</a>
-                <a href="#about">about</a>
-                <!-- <a href="#snapshots">snapshots</a> --> <!-- add this in that mid section??-->
-                <a href="#projects">projects</a> <!-- dropdown for the projects -->
+                <a href="#projects">projects</a>
+                <a href="#collab">collabs</a> <!-- dropdown for the projects -->
                 <a href="#contact">contact</a>
             </div>
             <div class="hamburger">
@@ -26,95 +25,103 @@
     </header>
     <main>
         <section id="hero">
-            <div class="hero-container">
-                <div class="hero_img">
-                    <img src="hero.png" alt="hero image">
-                </div>
-                <div class="hero_text">
-                    <h2>name</h2>
-                    <p>i'm a role</p> 
-                    <button onclick="location.href='#projects'">see my work</button>
-                </div>
-            </div>
-        </section>
-        <section id="about">
-            <div class="about-container">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        This is your little intro paragraph about who you are.</p>
-                    <div class="hobbies">
-                        <span>🌌 Astronomy</span>
-                        <span>💻 Tech</span>
-                        <span>📚 Reading</span>
-                        <span>🎨 Creativity</span>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <img src="images/about.png" alt="About Me Graphic">
-                </div>
-            </div>
-        </section>
+  <div class="particles">
+    <!-- Layer 1: farthest (faint, small, slow) -->
+    <span class="layer1"></span>
+    <span class="layer1"></span>
+    <span class="layer1"></span>
+    <span class="layer1"></span>
 
-        <section id="snapshots">
-            <div class="carousel">
-                <input type="radio" name="slider" id="slide1" checked>
-                <input type="radio" name="slider" id="slide2">
-                <input type="radio" name="slider" id="slide3">
-                <div class="slides">
-                    <div class="slide"><img src="image1.jpg" alt="teaser 1"></div>
-                    <div class="slide"><img src="image2.jpg" alt="teaser 2"></div>
-                    <div class="slide"><img src="image3.jpg" alt="teaser 3"></div>
-                </div>
-                <div class="controls">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                </div>
-            </div>
+    <!-- Layer 2: mid-depth (medium size, medium speed) -->
+    <span class="layer2"></span>
+    <span class="layer2"></span>
+    <span class="layer2"></span>
+    <span class="layer2"></span>
 
-            <div class="sidebar">
-                <h3>Highlights</h3>
-                <ul>
-                    <li>Upcoming Project 1</li>
-                    <li>Upcoming Project 2</li>
-                    <li>Upcoming Project 3</li>
-                </ul>
-            </div>
-        </section>
+    <!-- Layer 3: closest (bright, larger, faster) -->
+    <span class="layer3"></span>
+    <span class="layer3"></span>
+    <span class="layer3"></span>
+    <span class="layer3"></span>
+</div>
+
+  <div class="hero-content">
+    <h1>Soumya Thakur</h1>
+    <p>portfolio</p>
+    <p>Exploring the future, one line of code at a time.</p>
+    <button onclick="location='#projects'">View My Work</button>
+  </div>
+</section>
         <section id="projects">
             <h2>projects</h2>
             <div class="projects-grid">
                 <div class="prj">
                     <div class="prj-img">
-                        <img src="project1.jpg" alt="Project 1">
+                        <video autoplay loop muted playsinline>
+                            <source src="C:\Users\Soumya\Documents\web dev class\extras\Night City Skyline - Google Chrome 2025-10-04 10-35-47.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                    <h4>i'm project</h4>
-                    <p>des</p>
-                    <p class="stack">tech stack thingy</p>
-                    <a href="">git repo</a>
+                    <h4>Skyline</h4>
+                    <p>A night skyline visual using only HTML and CSS.</p>
+                    <!-- <p class="stack">tech stack thingy</p> -->
+                    <a href="https://github.com/sovmya/skyline" target="_blank">git repo</a>
                 </div>
 
                 <div class="prj">
                     <div class="prj-img">
-                        <img src="project2.jpg" alt="Project 2">
+                        <video autoplay loop muted playsinline>
+                            <source src="C:\Users\Soumya\Documents\web dev class\class 10\Solar System - Google Chrome 2025-10-04 10-04-44.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                    <h4>me too</h4>
-                    <p>crip</p>
-                    <p class="stack">tech stack thingy</p>
-                    <a href="">git repo</a>
+                    <h4>Solar System</h4>
+                    <p>A solar system visual using only HTML and CSS.</p>
+                    <p class="stack"></p>
+                    <a href="https://github.com/sovmya/Solar-System" target="_blank">git repo</a>
                 </div>
 
                 <div class="prj">
                     <div class="prj-img">
-                        <img src="project3.jpg" alt="Project 3">
+                        <video autoplay loop muted playsinline>
+                            <source src="C:\Users\Soumya\Documents\web dev class\extras\Floating Bubbles - Google Chrome 2025-10-04 11-23-32.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                     <h4>me three</h4>
                     <p>cito</p>
-                    <p class="stack">tech stack thingy</p>
-                    <a href="">git repo</a>
+                    <!-- <p class="stack">tech stack thingy</p> -->
+                    <a href="https://github.com/sovmya/bubbles" target="_blank">git repo</a>
                 </div>
             </div>
+            
+        </section>
+
+        <section id="snapshots">
+                <div class="carousel">
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    <div class="slides">
+                        <div class="slide"><img src="image1.jpg" alt="teaser 1"></div>
+                        <div class="slide"><img src="image2.jpg" alt="teaser 2"></div>
+                        <div class="slide"><img src="image3.jpg" alt="teaser 3"></div>
+                    </div>
+                    <div class="controls">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Upcoming Project 1</li>
+                        <li>Upcoming Project 2</li>
+                        <li>Upcoming Project 3</li>
+                    </ul>
+                </div>
         </section>
 
         <section id="collab">
@@ -166,17 +173,28 @@
 
     </main>
     <footer>
-        <div class="connect">
-            <!-- social media icons -->
-            <a href="#" target="_blank" aria-label="Twitter">🐦</a>
-            <a href="#" target="_blank" aria-label="LinkedIn">💼</a>
-            <a href="#" target="_blank" aria-label="GitHub">🐙</a>
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    This is your little intro paragraph about who you are.</p>
+                <div class="hobbies">
+                    <span>🌌 Astronomy</span>
+                    <span>💻 Tech</span>
+                    <span>📚 Reading</span>
+                    <span>🎨 Creativity</span>
+                </div>
+            </div>
         </div>
-
+        <div class="connect">
+            <p>let’s connect</p>
+            <a href="#">github</a>
+            <a href="#">linkedin</a>
+            <a href="#">twitter</a>
+        </div>
         <div class="copywrite">
-            <p>© 2025 Your Name</p>
+            <p>© 2025 meee</p>
         </div>
     </footer>
-
 </body>
 </html>
