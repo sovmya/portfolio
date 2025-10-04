@@ -1,77 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soumya Thakur | PORTFOLIO</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="image.png" alt="logo">
+                <span class="logo-text">SOUMYA THAKUR</span>
             </div>
-            <div class="nav-links">
-                <a href="#hero">home</a>
-                <a href="#projects">projects</a>
-                <a href="#collab">collabs</a> <!-- dropdown for the projects -->
-                <a href="#contact">contact</a>
-            </div>
-            <div class="hamburger">
 
+            <input type="checkbox" id="menu-toggle" />
+
+            <div class="nav-links">
+                <div class="link-box">
+                    <a href="#hero">HOME</a>
+                </div>
+                <div class="link-box">
+                    <a href="#projects">PROJECTS</a>
+                </div>
+                <div class="link-box">
+                    <a href="#collab">COLLABS</a>
+                </div>
+                <div class="link-box">
+                    <a href="#contact">CONTACT</a>
+                </div>
             </div>
+
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </nav>
     </header>
+
     <main>
         <section id="hero">
-  <div class="particles">
-    <!-- Layer 1: farthest (faint, small, slow) -->
-    <span class="layer1"></span>
-    <span class="layer1"></span>
-    <span class="layer1"></span>
-    <span class="layer1"></span>
-
-    <!-- Layer 2: mid-depth (medium size, medium speed) -->
-    <span class="layer2"></span>
-    <span class="layer2"></span>
-    <span class="layer2"></span>
-    <span class="layer2"></span>
-
-    <!-- Layer 3: closest (bright, larger, faster) -->
-    <span class="layer3"></span>
-    <span class="layer3"></span>
-    <span class="layer3"></span>
-    <span class="layer3"></span>
-</div>
-
-  <div class="hero-content">
-    <h1>Soumya Thakur</h1>
-    <p>portfolio</p>
-    <p>Exploring the future, one line of code at a time.</p>
-    <button onclick="location='#projects'">View My Work</button>
-  </div>
-</section>
+            <div class="hero-content">
+                <p>PORTFOLIO</p>
+                <h1>Soumya Thakur</h1>
+                <p>Building ideas that bridge creativity, logic, and the future of human–tech interaction.</p>
+                <button onclick="location='#projects'">Check Out My Work</button>
+            </div>
+        </section>
         <section id="projects">
             <h2>projects</h2>
             <div class="projects-grid">
                 <div class="prj">
                     <div class="prj-img">
                         <video autoplay loop muted playsinline>
-                            <source src="C:\Users\Soumya\Documents\web dev class\extras\Night City Skyline - Google Chrome 2025-10-04 10-35-47.mp4" type="video/mp4">
+                            <source
+                                src="C:\Users\Soumya\Documents\web dev class\extras\Night City Skyline - Google Chrome 2025-10-04 10-35-47.mp4"
+                                type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <h4>Skyline</h4>
                     <p>A night skyline visual using only HTML and CSS.</p>
-                    <!-- <p class="stack">tech stack thingy</p> -->
                     <a href="https://github.com/sovmya/skyline" target="_blank">git repo</a>
                 </div>
 
                 <div class="prj">
                     <div class="prj-img">
                         <video autoplay loop muted playsinline>
-                            <source src="C:\Users\Soumya\Documents\web dev class\class 10\Solar System - Google Chrome 2025-10-04 10-04-44.mp4" type="video/mp4">
+                            <source
+                                src="C:\Users\Soumya\Documents\web dev class\class 10\Solar System - Google Chrome 2025-10-04 10-04-44.mp4"
+                                type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -84,44 +84,45 @@
                 <div class="prj">
                     <div class="prj-img">
                         <video autoplay loop muted playsinline>
-                            <source src="C:\Users\Soumya\Documents\web dev class\extras\Floating Bubbles - Google Chrome 2025-10-04 11-23-32.mp4" type="video/mp4">
+                            <source
+                                src="C:\Users\Soumya\Documents\web dev class\extras\Floating Bubbles - Google Chrome 2025-10-04 11-23-32.mp4"
+                                type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <h4>me three</h4>
-                    <p>cito</p>
-                    <!-- <p class="stack">tech stack thingy</p> -->
+                    <h4>Floating Bubbles</h4>
+                    <p>A visual of vibrant bubbles floating up using only HTML and CSS.</p>
                     <a href="https://github.com/sovmya/bubbles" target="_blank">git repo</a>
                 </div>
             </div>
-            
+
         </section>
 
         <section id="snapshots">
-                <div class="carousel">
-                    <input type="radio" name="slider" id="slide1" checked>
-                    <input type="radio" name="slider" id="slide2">
-                    <input type="radio" name="slider" id="slide3">
-                    <div class="slides">
-                        <div class="slide"><img src="image1.jpg" alt="teaser 1"></div>
-                        <div class="slide"><img src="image2.jpg" alt="teaser 2"></div>
-                        <div class="slide"><img src="image3.jpg" alt="teaser 3"></div>
-                    </div>
-                    <div class="controls">
-                        <label for="slide1"></label>
-                        <label for="slide2"></label>
-                        <label for="slide3"></label>
-                    </div>
+            <div class="carousel">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <div class="slides">
+                    <div class="slide"><img src="image1.jpg" alt="teaser 1"></div>
+                    <div class="slide"><img src="image2.jpg" alt="teaser 2"></div>
+                    <div class="slide"><img src="image3.jpg" alt="teaser 3"></div>
                 </div>
+                <div class="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
+            </div>
 
-                <div class="sidebar">
-                    <h3>Highlights</h3>
-                    <ul>
-                        <li>Upcoming Project 1</li>
-                        <li>Upcoming Project 2</li>
-                        <li>Upcoming Project 3</li>
-                    </ul>
-                </div>
+            <div class="sidebar">
+                <h3>Highlights</h3>
+                <ul>
+                    <li>Upcoming Project 1</li>
+                    <li>Upcoming Project 2</li>
+                    <li>Upcoming Project 3</li>
+                </ul>
+            </div>
         </section>
 
         <section id="collab">
@@ -131,7 +132,7 @@
 
             <div class="collab-text">
                 <h2>Collaborations</h2>
-                <p>Open to discussing project ideas, collabs, or freelance opportunities.  
+                <p>Open to discussing project ideas, collabs, or freelance opportunities.
                     Placeholder text until I decide what this section is.</p>
                 <button>Let's Talk</button>
             </div>
@@ -146,27 +147,28 @@
 
             <div class="form">
                 <form action="" method="post">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" required>
-                </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your email" required>
-                </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Topic">
-                </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Topic">
+                    </div>
 
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
-                </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message..."
+                            required></textarea>
+                    </div>
 
-                <button type="submit">Send</button>
+                    <button type="submit">Send</button>
                 </form>
             </div>
         </section>
@@ -176,7 +178,7 @@
         <div class="about-container">
             <div class="about-text">
                 <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     This is your little intro paragraph about who you are.</p>
                 <div class="hobbies">
                     <span>🌌 Astronomy</span>
@@ -197,4 +199,5 @@
         </div>
     </footer>
 </body>
+
 </html>
