@@ -201,7 +201,6 @@ main {
   display: grid;
   margin-top: 0px;
   position: relative;
-  /* animation: glow-pulse 2s infinite alternate; */
 }
 
 main::before {
@@ -211,21 +210,16 @@ main::before {
   left: 0;
   width: 100%;
   height: 100%;
-  /* display: block; */
   background: radial-gradient(circle at 70% 30%, rgba(212, 175, 55, 0.15), transparent 60%),
               radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.1), transparent 70%);
   filter: blur(80px);
-  z-index: 0; /* keep it behind everything */
-  animation: glow-pulse 2s infinite alternate;
+  z-index: 0;
 }
 
 main * {
   position: relative;
   z-index: 1;
 }
-/* main {
-  background: #071013;
-} */
 
 #hero {
   position: relative;
@@ -238,7 +232,6 @@ main * {
   padding-left: 10%;
   box-sizing: border-box;
   overflow: hidden;
-  /* animation: glow-pulse 2s infinite alternate; */
 }
 
 .hero-content {
@@ -302,15 +295,6 @@ main * {
   }
 }
 
-@keyframes glow-pulse {
-  0% {
-    filter: brightness(1);
-  }
-  100% {
-    filter: brightness(1.7); /* Adjust for desired glow intensity */
-  }
-}
-
 #hero::after {
   content: "";
   position: absolute;
@@ -328,13 +312,11 @@ main * {
   position: relative;
   background: transparent;
   overflow: hidden;
-  /* z-index: 1; */
 
 }
 
 #projects h2 {
   color: #f2f2f2;
-  /* color: #d4af37; */
 }
 
 #projects::before {
@@ -395,8 +377,8 @@ main * {
   font-weight: 700;
   font-size: 2.5rem;
   letter-spacing: 1px;
-  color: #d4af37; /* gold accent */
-  text-transform: none; /* no all-caps */
+  color: #d4af37;
+  text-transform: none;
   margin-bottom: 2rem;
   position: relative;
 }
@@ -428,7 +410,6 @@ main * {
 
 .carousel {
   width: 100%;
-  /* flex: 2; */
   margin-top: 4rem;
   height: 33vh;
   position: relative;
@@ -514,7 +495,7 @@ main * {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 150px; /* controls fade length */
+  height: 150px;
   background: linear-gradient(to bottom, transparent, #071013);
   pointer-events: none;
   z-index: 2;
@@ -523,13 +504,13 @@ main * {
 #collab::before {
   content: "";
   position: absolute;
-  top: -100px; /* start above the section */
+  top: -100px;
   left: 0;
   width: 100%;
-  height: 100px; /* height of the fade */
+  height: 100px; 
   background: linear-gradient(to bottom, #0e0e10, transparent);
   pointer-events: none;
-  z-index: 0; /* behind content */
+  z-index: 0;
 }
 
 #collab {
@@ -544,8 +525,6 @@ main * {
   overflow: hidden;
   background: url("collab-bg.jpeg") no-repeat center center/cover;
   overflow: hidden;
-  /* width: 100%; */
-  /* height: auto; */
 }
 
 #collab::before {
@@ -649,7 +628,7 @@ main * {
   left: 0;
   width: 100%;
   pointer-events: none;
-  z-index: 1; /* behind content */
+  z-index: 1;
 }
 
 #collab::before {
@@ -658,7 +637,7 @@ main * {
   top: 0;
   left: 0;
   width: 100%;
-  height: 200px; /* taller fade */
+  height: 200px;
   background: linear-gradient(to bottom, #071013 0%, rgba(7,16,19,0.8) 50%, transparent 100%);
   pointer-events: none;
   z-index: 1;
@@ -670,7 +649,7 @@ main * {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 200px; /* taller fade */
+  height: 200px;
   background: linear-gradient(to top, #071013 0%, rgba(7,16,19,0.8) 50%, transparent 100%);
   pointer-events: none;
   z-index: 1;
@@ -691,7 +670,6 @@ main * {
   background:#071013;
 }
 
-/* smooth fade from previous section */
 #contact::before {
   content: "";
   position: absolute;
@@ -789,7 +767,6 @@ textarea:focus {
   transform: translateY(-2px);
 }
 
-/* fade bottom (to blend with footer) */
 #contact::after {
   content: "";
   position: absolute;
@@ -801,7 +778,6 @@ textarea:focus {
   pointer-events: none;
 }
 
-/* responsive */
 @media (max-width: 768px) {
   #contact {
     flex-direction: column;
@@ -906,7 +882,6 @@ footer .footer-top {
   margin: 0;
 }
 
-/* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .footer-top {
     flex-direction: column;
