@@ -254,6 +254,7 @@ main * {
   font-size: 3.5rem;
   font-weight: 700;
   background: linear-gradient(90deg, #f2f2f2, #ceb86f, #d4af37, #d6ab1c);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -803,6 +804,7 @@ footer {
   background: #071013;
   color: #f2f2f2;
   font-family: 'Poppins', sans-serif;
+  z-index: 5;
 }
 
 footer .footer-top {
@@ -892,5 +894,6 @@ footer .footer-top {
   .about-container,
   .connect {
     flex: 1 1 100%;
+    align-self: center;
   }
 }
