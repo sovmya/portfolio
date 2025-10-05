@@ -348,7 +348,7 @@ main * {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
   transition: transform 0.2s ease, box shadow 0.25s ease;
 }
@@ -412,6 +412,66 @@ main * {
 .prj:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 0 20px #d4af376e;
+}
+
+#projects h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f2f2f2;
+    margin: 0.5rem 0 0.3rem 0;
+}
+
+.prj p {
+    font-size: 16px;
+    color: #cccccc;
+    margin-bottom: 0.8rem;
+}
+
+.prj-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.prj-skills span {
+    font-size: 0.8rem;
+    background: rgba(212, 175, 55, 0.2);
+    color: #d4af37;
+    padding: 0.3rem 0.7rem;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+}
+
+.prj a {
+    margin-top: auto;
+    color: #cccccc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.prj a:hover {
+    color: #d4af37;
+    /* text-decoration: underline; */
+}
+
+.prj a {
+    display: inline-block; /* so padding and border work properly */
+    margin-top: auto;      /* push it to the bottom */
+    text-align: center;    /* center the text */
+    color: #d4af37;        /* golden color */
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    border: 2px solid #d4af37; /* golden border */
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.prj a:hover {
+    background: rgba(212, 175, 55, 0.1); /* slight gold background on hover */
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+    color: #f2f2f2;
 }
 
 .carousel {
