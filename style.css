@@ -374,16 +374,21 @@ main * {
   object-fit: contain;
 }
 
-.prj-heading {
-  font-weight: 700;
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-  color: #d4af37;
-  text-transform: none;
-  margin-bottom: 2rem;
-  position: relative;
+.projects-header {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background: rgba(7, 16, 19, 0.6);
+    backdrop-filter: blur(6px); 
+    border-radius: 12px;
+    margin-bottom: 2rem;
 }
 
+#projects h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #d4af37;
+    font-weight: 700;
+}
 
 .prj p {
   color: #999999;
