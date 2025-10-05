@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soumya Thakur | PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -45,12 +46,13 @@
             <div class="hero-content">
                 <p>PORTFOLIO</p>
                 <h1>Soumya Thakur</h1>
-                <p>Building ideas that bridge creativity, logic, and the future of human–tech interaction.</p>
+                <p>A developer and designer building ideas that bridge creativity, logic, and the future of human–tech
+                    interaction.</p>
                 <button onclick="location='#projects'">Check Out My Work</button>
             </div>
         </section>
         <section id="projects">
-            <h2>projects</h2>
+            <h2>MY PROJECTS</h2>
             <div class="projects-grid">
                 <div class="prj">
                     <div class="prj-img">
@@ -95,10 +97,6 @@
                     <a href="https://github.com/sovmya/bubbles" target="_blank">git repo</a>
                 </div>
             </div>
-
-        </section>
-
-        <section id="snapshots">
             <div class="carousel">
                 <input type="radio" name="slider" id="slide1" checked>
                 <input type="radio" name="slider" id="slide2">
@@ -114,35 +112,32 @@
                     <label for="slide3"></label>
                 </div>
             </div>
-
-            <div class="sidebar">
-                <h3>Highlights</h3>
-                <ul>
-                    <li>Upcoming Project 1</li>
-                    <li>Upcoming Project 2</li>
-                    <li>Upcoming Project 3</li>
-                </ul>
-            </div>
         </section>
 
         <section id="collab">
-            <div class="collab-visual">
-                <img src="placeholder.jpg" alt="collaboration graphic">
-            </div>
+            <div class="collab-overlay">
 
-            <div class="collab-text">
-                <h2>Collaborations</h2>
-                <p>Open to discussing project ideas, collabs, or freelance opportunities.
-                    Placeholder text until I decide what this section is.</p>
-                <button>Let's Talk</button>
+
+                <div class="collab-content">
+                    <h2>Collaborate With Me</h2>
+                    <p>
+                        I enjoy bringing ideas to life through clean design and purposeful code.
+                        Whether you’re a creator, developer, or brand looking to build something meaningful —
+                        I’m open to collaborative projects that challenge creativity and push boundaries.
+                    </p>
+                    <button onclick="location.href='#contact'">Start a Project</button>
+                </div>
             </div>
         </section>
+
 
         <section id="contact">
             <div class="info">
                 <h2>Get in Touch</h2>
-                <p>Feel free to reach out for collaborations, opportunities, or just a hello.</p>
-                <p><strong>Email:</strong> yourname@email.com</p>
+                <p>Whether it’s a collaboration, a freelance opportunity, or just an idea you’d like to discuss; I’m
+                    always open to connecting. <br><br>
+                    Feel free to drop a message, and I’ll get back as soon as I can.</p>
+                <p><strong>Email:</strong> sovmyathakur@gmail.com</p>
             </div>
 
             <div class="form">
@@ -168,36 +163,49 @@
                             required></textarea>
                     </div>
 
-                    <button type="submit">Send</button>
+                    <button type="submit">SEND</button>
                 </form>
             </div>
         </section>
 
     </main>
     <footer>
-        <div class="about-container">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    This is your little intro paragraph about who you are.</p>
-                <div class="hobbies">
-                    <span>🌌 Astronomy</span>
-                    <span>💻 Tech</span>
-                    <span>📚 Reading</span>
-                    <span>🎨 Creativity</span>
+        <div class="footer-top">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>A curious mind exploring where tech, design, and imagination meet.
+                        Always learning, always building.</p>
+                    <div class="hobbies">
+                        <span>Astronomy</span>
+                        <span>Tech</span>
+                        <span>Reading</span>
+                        <span>Creativity</span>
+                    </div>
                 </div>
             </div>
+
+            <div class="connect">
+                <p>Let’s Connect</p>
+                <a href="https://github.com/sovmya" target="_blank" aria-label="GitHub" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/sovmya" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:sovmyathakur@gmail.com" aria-label="Email" title="Email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
-        <div class="connect">
-            <p>let’s connect</p>
-            <a href="#">github</a>
-            <a href="#">linkedin</a>
-            <a href="#">twitter</a>
-        </div>
+
+        <div class="footer-divider"></div>
+
         <div class="copywrite">
-            <p>© 2025 meee</p>
+            <p>© 2025 Sovmya. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 
 </html>
