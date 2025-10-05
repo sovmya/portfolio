@@ -187,10 +187,6 @@ nav a:hover {
   }
 }
 
-header div {
-  /* background: rgba(36, 33, 36, 0.4); */
-}
-
 header::after {
   content: "";
   display: block;
@@ -265,7 +261,6 @@ main * {
   font-size: 3.5rem;
   font-weight: 700;
   background: linear-gradient(90deg, #f2f2f2, #ceb86f, #d4af37, #d6ab1c);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -396,10 +391,16 @@ main * {
   object-fit: contain;
 }
 
-.prj h4 {
-  margin: 0.5rem 0;
-  color: #f2f2f2;
+.prj-heading {
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color: #d4af37; /* gold accent */
+  text-transform: none; /* no all-caps */
+  margin-bottom: 2rem;
+  position: relative;
 }
+
 
 .prj p {
   color: #999999;
@@ -418,10 +419,6 @@ main * {
   color: #cccccc;
   font-weight: bold;
   text-decoration: none;
-}
-
-.prj a:hover {
-  /* text-decoration: underline; */
 }
 
 .prj:hover {
@@ -854,7 +851,7 @@ footer .footer-top {
 .about-text h2 {
   font-size: 1.2rem;
   color: #cccccc;
-  margin-bottom: 0.5rem;x
+  margin-bottom: 0.5rem;
 }
 
 .about-text p {
@@ -920,6 +917,5 @@ footer .footer-top {
   .about-container,
   .connect {
     flex: 1 1 100%;
-    align-
   }
 }
