@@ -488,6 +488,7 @@ main * {
 .carousel * {
   box-sizing: border-box;
   max-width: 100%;
+  height: auto;
 }
 
 .carousel input {
@@ -506,13 +507,16 @@ main * {
   flex-shrink: 0;
   width: 100%;
   height: 100%;
+  /* object-fit: cover; */
 }
 
 .slide img {
   width: 100%;
+  /* height: 100%; */
   height: auto;
   object-fit: cover;
   display: block;
+  /* object-position: bottomte */
 }
 
 #slide1:checked~.slides {
